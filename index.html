@@ -26,29 +26,36 @@
       <div data-key="72" class="key">
         <kbd>H</kbd>
       </div>
-      <div data-key="74"class="key">
+      <div data-key="74" class="key">
         <kbd>J</kbd>
       </div>
-      <div data-key="75"class="key">
+      <div data-key="75" class="key">
         <kbd>K</kbd>
       </div>
-      <div class="key">
+      <div data-key="76" class="key">
         <kbd>L</kbd>
       </div>
     </div>
   </div>
 
-  <audio src="audio/1 kick.wav"></audio>
-  <audio src="audio/2 kick2.wav"></audio>
-  <audio src="audio/3 ghost roll.wav"></audio>
-  <audio src="audio/4 kick and ride.wav"></audio>
-  <audio src="audio/5 snares.wav"></audio>
-  <audio src="audio/6 kick3.wav"></audio>
-  <audio src="audio/7 snare roll.wav"></audio>
-  <audio src="audio/8 crash.wav"></audio>
-  <audio src="audio/9 snare.wav"></audio>
+  <audio data-key="65" src="audio/1 kick.wav"></audio>
+  <audio data-key="83" src="audio/2 kick2.wav"></audio>
+  <audio data-key="68" src="audio/3 ghost roll.wav"></audio>
+  <audio data-key="70" src="audio/4 kick and ride.wav"></audio>
+  <audio data-key="71" src="audio/5 snares.wav"></audio>
+  <audio data-key="72" src="audio/6 kick3.wav"></audio>
+  <audio data-key="74" src="audio/7 snare roll.wav"></audio>
+  <audio data-key="75" src="audio/8 crash.wav"></audio>
+  <audio data-key="76" src="audio/9 snare.wav"></audio>
 
-  <script></script>
+  <script>
+    // const key = document.querySelector('key');
+    window.addEventListener('keydown', (event) => {
+      const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
+      console.log(audio)
+
+    });
+  </script>
 
 </body>
 </html>
