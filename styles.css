@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://image.shutterstock.com/image-illustration/3d-illustration-air-horn-on-260nw-406375420.jpg');
+    /* object-fit: fill; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    padding: 20px;
+    border: 2px solid black;
+    background: white;
+    margin: 5px;
+}
+
+.play {
+    background: black;
+    color: white;
+}
+
