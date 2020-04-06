@@ -2,7 +2,7 @@
     display: flex;
     height: 100%;
     width: 100%;
-    background-image: url('https://image.shutterstock.com/image-illustration/3d-illustration-air-horn-on-260nw-406375420.jpg');
+    background-image: url('https://lh3.googleusercontent.com/proxy/jMkJyXyA3xiyaQI-nk_vTYfViiLGeDJvQGiJQzYLqbdZBOqeHYiaUtOu32yVyPAJpaTs_NiZp7gQz4qg8XKIiofbQy9e2s4VxOgSCddMCVS48dFrTX9SrQzTvbpuFKdiJ2QVI5TD');
     /* object-fit: fill; */
     display: flex;
     justify-content: center;
@@ -13,8 +13,9 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    display: flex;
+    justify-content: center;
+
 }
 
 .key {
@@ -22,6 +23,7 @@
     border: 2px solid black;
     background: white;
     margin: 5px;
+    display: block;
 }
 
 .play {

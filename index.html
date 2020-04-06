@@ -10,29 +10,37 @@
     <div class="buttons">
       <div data-key="65" class="key">
         <kbd>A</kbd>
+        <span>Kick</span>
       </div>
       <div data-key="83" class="key">
         <kbd>S</kbd>
+        <span>Rim</span>
       </div>
       <div data-key="68" class="key">
         <kbd>D</kbd>
+        <span>Clap</span>
       </div>
       <div data-key="70" class="key">
         <kbd>F</kbd>
+        <span>Snare</span>
       </div>
       <div data-key="71" class="key">
         <kbd>G</kbd>
+        <span>Open Hat</span>
       </div>
       <div data-key="72" class="key">
         <kbd>H</kbd>
+        <span>Tom</span>
       </div>
       <div data-key="74" class="key">
         <kbd>J</kbd>
+        <span>Crash</span>
       </div>
       <div data-key="75" class="key">
         <kbd>K</kbd>
+        <span>Hi-Hat</span>
       </div>
-      <div data-key="76" class="key">
+      <!-- <div data-key="76" class="key">
         <kbd>L</kbd>
       </div>
       <div data-key="90" class="key">
@@ -55,36 +63,35 @@
       </div>
       <div data-key="77" class="key">
         <kbd>M</kbd>
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <audio data-key="65" src="audio/amen1.wav"></audio>
-  <audio data-key="83" src="audio/amen2.wav"></audio>
-  <audio data-key="68" src="audio/amen3.wav"></audio>
-  <audio data-key="70" src="audio/amen4.wav"></audio>
-  <audio data-key="71" src="audio/amen5.wav"></audio>
-  <audio data-key="72" src="audio/amen6.wav"></audio>
-  <audio data-key="74" src="audio/amen7.wav"></audio>
-  <audio data-key="75" src="audio/amen8.wav"></audio>
-  <audio data-key="76" src="audio/amen9.wav"></audio>
+  <audio data-key="65" src="audio/bd02.wav"></audio>
+  <audio data-key="83" src="audio/rs01.wav"></audio>
+  <audio data-key="68" src="audio/cp01.wav"></audio>
+  <audio data-key="70" src="audio/sd03.wav"></audio>
+  <audio data-key="71" src="audio/oh02.wav"></audio>
+  <audio data-key="72" src="audio/mt02.wav"></audio>
+  <audio data-key="74" src="audio/cr02.wav"></audio>
+  <audio data-key="75" src="audio/hh01.wav"></audio>
+  <!-- <audio data-key="76" src="audio/amen9.wav"></audio>
   <audio data-key="90" src="audio/amen10.wav"></audio>
   <audio data-key="88" src="audio/amen11.wav"></audio>
   <audio data-key="67" src="audio/amen12.wav"></audio>
   <audio data-key="86" src="audio/amen13.wav"></audio>
   <audio data-key="66" src="audio/amen14.wav"></audio>
   <audio data-key="78" src="audio/amen15.wav"></audio>
-  <audio data-key="77" src="audio/amen16.wav"></audio>
+  <audio data-key="77" src="audio/amen16.wav"></audio> -->
 
 
   <script>
     // const key = document.querySelector('key');
     window.addEventListener('keydown', (event) => {
-      const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
+      const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
       const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
-      console.log(audio);
-      if (!audio)
-        return;
+      // console.log(audio);
+      if (!audio) return;
       audio.currentTime = 0;
       // key.classList.
       audio.play()
