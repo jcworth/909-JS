@@ -26,7 +26,7 @@
       </div>
       <div data-key="71" class="key">
         <kbd>G</kbd>
-        <span>Open Hat</span>
+        <span>OpenHat</span>
       </div>
       <div data-key="72" class="key">
         <kbd>H</kbd>
@@ -38,32 +38,8 @@
       </div>
       <div data-key="75" class="key">
         <kbd>K</kbd>
-        <span>Hi-Hat</span>
+        <span>HiHat</span>
       </div>
-      <!-- <div data-key="76" class="key">
-        <kbd>L</kbd>
-      </div>
-      <div data-key="90" class="key">
-        <kbd>Z</kbd>
-      </div>
-      <div data-key="88" class="key">
-        <kbd>X</kbd>
-      </div>
-      <div data-key="67" class="key">
-        <kbd>C</kbd>
-      </div>
-      <div data-key="86" class="key">
-        <kbd>V</kbd>
-      </div>
-      <div data-key="66" class="key">
-        <kbd>B</kbd>
-      </div>
-      <div data-key="78" class="key">
-        <kbd>N</kbd>
-      </div>
-      <div data-key="77" class="key">
-        <kbd>M</kbd>
-      </div> -->
     </div>
   </div>
 
@@ -75,27 +51,22 @@
   <audio data-key="72" src="audio/mt02.wav"></audio>
   <audio data-key="74" src="audio/cr02.wav"></audio>
   <audio data-key="75" src="audio/hh01.wav"></audio>
-  <!-- <audio data-key="76" src="audio/amen9.wav"></audio>
-  <audio data-key="90" src="audio/amen10.wav"></audio>
-  <audio data-key="88" src="audio/amen11.wav"></audio>
-  <audio data-key="67" src="audio/amen12.wav"></audio>
-  <audio data-key="86" src="audio/amen13.wav"></audio>
-  <audio data-key="66" src="audio/amen14.wav"></audio>
-  <audio data-key="78" src="audio/amen15.wav"></audio>
-  <audio data-key="77" src="audio/amen16.wav"></audio> -->
-
 
   <script>
-    // const key = document.querySelector('key');
     window.addEventListener('keydown', (event) => {
       const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
       const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
-      // console.log(audio);
       if (!audio) return;
       audio.currentTime = 0;
-      // key.classList.
+      key.classList.add('play')
       audio.play()
+    });
 
+    const keys = document.querySelectorAll('.key')
+    keys.forEach((key) => {
+      key.addEventListener('transitionend', (event) => {
+        event.target.classList.remove('play');
+      });
     });
   </script>
 
