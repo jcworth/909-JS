@@ -1,5 +1,15 @@
+body {
+    margin: 0 auto;
+}
+
 .container {
-    display: flex;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/RolandTR-909-front.jpg/640px-RolandTR-909-front.jpg');
+    background-size: auto;
+}
+
+.buttons {
+    width: 80%;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/RolandTR-909-front.jpg/640px-RolandTR-909-front.jpg');
@@ -9,19 +19,10 @@
     align-items: center;
 }
 
-.buttons {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-
-}
-
 .key {
     padding: 20px;
     border: 2px solid black;
-    background: white;
+    background: #E8E0CA;
     margin: 5px;
     width: 60px;
     text-align: center;
@@ -34,7 +35,7 @@ kbd {
 }
 
 .play {
-    background: black;
+    background: #605F7D;
     border-color: white;
     color: white;
     transition: 0.1s;
